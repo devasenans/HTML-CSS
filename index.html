@@ -3,163 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Meat & Drink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Project using bootstrap</title>
 </head>
 <body>
-    <div class="landing">
-        <header>
-            <a href="index.html" id="logo"><h2><i class="fa-solid fa-bell-concierge"></i>Meta & Drink</h2></a>
-            <nav>
-                <a href="#menu"><i class="fa-solid fa-bars"></i>Menu</a>
-                <a href="#loc"><i class="fa-solid fa-location-dot"></i>Location</a>
-            </nav>
-        </header>
-
-        <div class="main">
-            <div class="tagline1">
-                Finest Trest for Your Taste Buds.
-            </div>
-            <div class="tagline2">
-                Freshest Food Guranteed.
-            </div>
-            <div class="callus">   
-                Call us @+91 98765434567
-            </div>
-            <button>Order Now</button>
+  <!-- Navabar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="media/Logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">FAQ</a>
+              </li>
+            </ul>
+            <a id="login-button" href="#" class="login-button" style="color: #4CAF4F;">Login</a>
+            <a id="signup" class="btn btn-success" href="#" role="button">Sign Up</a>
+          </div>
         </div>
+      </nav>
+  <!-- End Navabar -->
+
+  <!-- Hero section -->
+      <section class="hero">
+        <div class="container">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-8 col-sm-8 col-lg-5">
+              <img src="media/Illustration.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="391" height="407" loading="lazy">
+            </div>
+            <div class="col-lg-7"">
+              <h1 class="label">Lessons and insights</h1>
+              <h1 class="label2">from 8 years</h1>
+              <p class="lead">Where to grow your business as a photographer: site or social media?</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button id="herobtn" type="button" class="btn btn-lg px-4 me-md-2" style="width: 128px;">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- Hero section End-->
+
+  <!-- clients -->
+      <section  style="height: 190px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="clients" class="fw-semibold mb3 text-center mt-5">Our Clients</h2>
+              <p id="clienttxt" class="text-center">We have been working with some Fortune 500+ clients</p>
+            </div>
+          </div>
+            <div id="clientslogo" class="row text-center">
+              <div class="col";"><img src="media/Logo0.svg" alt=""></div>
+              <div class="col";"><img src="media/Logo-1.svg" alt=""></div>
+              <div class="col";"><img src="media/Logo-2.svg" alt=""></div>
+              <div class="col";"><img src="media/Logo-3.svg" alt=""></div>
+              <div class="col";"><img src="media/Logo-4.svg" alt=""></div>
+              <div class="col";"><img src="media/Logo-5.svg" alt=""></div>
+              <div class="col";"><img src="media/Logo-6.svg" alt=""></div>
+          </div>
+        </div>
+      </section>
+  <!-- clients End-->
+
+
+  <!-- community -->
+      <section class="community">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="fw-semibold mb3 text-center mx-auto mt-5" style="width: 542px;">Manage your entire community in a single system</h2>
+                <p id="clienttxt" class="text-center">Who is Nextcent suitable for?</p>
+              </div>
+            </div>
+            <div id="Cards" class="row mx-auto">
+              <div class="col">
+                <div class="card text-center" style="padding-inline: 60px;">
+                  <img src="media/com1.svg" class="card-img-top mx-auto" alt="..." style="width: 65px; height: 56px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Membership Organisations</h5>
+                    <p class="card-text">Our membership management software provides full automation of membership renewals and payments</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center" style="padding-inline: 60px;">
+                  <img src="media/com1.svg" class="card-img-top mx-auto" alt="..." style="width: 65px; height: 56px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Membership Organisations</h5>
+                    <p class="card-text">Our membership management software provides full automation of membership renewals and payments</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center" style="padding-inline: 60px;">
+                  <img src="media/com1.svg" class="card-img-top mx-auto" alt="..." style="width: 65px; height: 56px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Membership Organisations</h5>
+                    <p class="card-text">Our membership management software provides full automation of membership renewals and payments</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+  <!-- community End-->
+
+  <!-- unlock -->
+  <section class="unlock">
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center ">
+        <div class="col-lg-7"">
+          <h2 id="unlockhead">The unseen of spending three years at Pixelgrade</h2>
+          <p class="lead">Where to grow your business as a photographer: site or social media?</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button id="herobtn" type="button" class="btn btn-lg px-4 me-md-2"">Leran More</button>
+          </div>
+        </div>
+        <div class="col-8 col-sm-8 col-lg-5">
+          <img src="media/unlock.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="391" height="407" loading="lazy">
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- unlock End-->
 
-    <h2 id="menu">Menu</h2>
-    <div class="menu">
-        <div class="starters">
-            <table>
-                <th colspan="2">starters</th>
-                <tr>
-                    <td>Paneer Tikka</td>
-                    <td>&#8377 150</td>
-                </tr>
-                <tr>
-                    <td>Gobi 65</td>
-                    <td>&#8377 100</td>
-                </tr>
-                <tr>
-                    <td>Vegetable Samosas</td>
-                    <td>&#8377 60</td>
-                </tr>
-                <tr>
-                    <td>Paneer 65</td>
-                    <td>&#8377 70</td>
-                </tr>
-                <tr>
-                    <td>Chicken Biryani (1)</td>
-                    <td>&#8377 120</td>
-                </tr>
-                <tr>
-                    <td>Chicken 65</td>
-                    <td>&#8377 100</td>
-                </tr>
-            </table>
+  <!-- achivements -->
+  <section class="achivements py-3 my-3 bg-light rounded">
+      <div class="container">
+        <div class="row">
+          <div id="achivetext" class="col-6 ">
+            <h2>Helping a local</h2>
+            <h2 style="color: #4CAF4F;">business reinvent itself</span></h2>
+            <p>We reached here with our hard work and dedication</p>
+          </div>
+          <div id="achivetext" class="col-6">
+            <img src="media/Counts.svg" alt="">
+          </div>
         </div>
-        <div class="maincourse">
-            <table>
-                <th colspan="2">Main Course</th>
-                <tr>
-                    <td>Chilly biriyani</td>
-                    <td>&#8377 180</td>
-                </tr>
-                <tr>
-                    <td>Mutton biriyani</td>
-                    <td>&#8377 180</td>
-                </tr>
-                <tr>
-                    <td>MT biriyani</td>
-                    <td>&#8377 180</td>
-                </tr>
-                <tr>
-                    <td>Beef biriyani</td>
-                    <td>&#8377 180</td>
-                </tr>
-                <tr>
-                    <td>Duck biriyani</td>
-                    <td>&#8377 180</td>
-                </tr>
-                <tr>
-                    <td>Anil biriyani</td>
-                    <td>&#8377 180</td>
-                </tr>
-            </table>
         </div>
-        <div class="shakes">
-            <table>
-                <th colspan="2">Shakes</th>
-                <tr>
-                    <td>Choco</td>
-                    <td>&#8377 40</td>
-                </tr>
-                <tr>
-                    <td>Strawberry</td>
-                    <td>&#8377 40</td>
-                </tr>
-                <tr>
-                    <td>Pineapple</td>
-                    <td>&#8377 40</td>
-                </tr>
-                <tr>
-                    <td>Black Current</td>
-                    <td>&#8377 40</td>
-                </tr>
-                <tr>
-                    <td>Oreo</td>
-                    <td>&#8377 40</td>
-                </tr>
-                <tr>
-                    <td>Vennila</td>
-                    <td>&#8377 40</td>
-                </tr>
-            </table>
+      </div>
+  </section>
+  <!-- achivements End-->
+
+   <!-- calender -->
+   <section class="calender">
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center ">
+        <div class="col-lg-7"">
+          <h2 id="calenderhead">How to design your site footer like we did</h2>
+          <p id="calenderbody" class="lead">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button id="herobtn" type="button" class="btn btn-lg px-4 me-md-2"">Leran More</button>
+          </div>
         </div>
+        <div class="col-8 col-sm-8 col-lg-5">
+          <img src="media/unlock.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="391" height="407" loading="lazy">
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- calender End-->
 
-    <h2 id="loc">Locations</h2>
-        <div class="locations">
-            <div class="annanagar">
-                <h2>Anna Nagar</h2>
-                <address>
-                    15, 10th Main Road</br>
-                    Anna Nagar,</br>
-                    Chennai - 600102
-                </address>
-            </div>
-            <div class="velachery">
-                <h2>Velachery</h2>
-                <address>
-                    5, 3rd Cross Road,</br>
-                    Vijaya Nagar,</br>
-                    Velachery,</br>
-                    Chennai - 600042
-                </address>
-            </div>
-            <div class="Tambaram">
-                <h2>Tambaram</h2>
-                <address>
-                    145, MIT Road,</br>
-                    Tambaram,</br>
-                    Chennai - 600045
-                </address>
-            </div>
-        </div>  
-        <footer>
-            <div class="social-menu">
-                <ul>
-                    <li><a href="#" target="blank"><i class="fab fa-facebook"></i></i></a></li>
-                    <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-            <div id="copyright">&#169 copyright Meat & Drink</div>
-        </footer>
+  <!-- customers -->
+  <section class="customers">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="media/image 9.png" style="width: 326px;" alt="">
+        </div>
+        <div class="col-9">
+          <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+          <h4 id="tim" style="color: #4CAF4F;">Tim Smith</h4>
+          <p>British Dragon Boat Racing Association</p>
+          <img src="media/Frame 14.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- customers End-->
+    <script src="JQuery/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

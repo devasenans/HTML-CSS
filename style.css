@@ -1,202 +1,136 @@
 :root{
-    --yellow:#FFB534;
-    --white:#f5f5f5;
-    --hov:#FBF6EE;
-    --grn:#65B741;
+    /* color */
+    --green:#4CAF4F;
+    --silver:#F5F7FA;
+    --gray:#4D4D4D;
+    --balck:#263238;
+    --white: #ffffff;
+
+    /* text */
+    --heading-1:64px;
+    --heading-2:36px;
+    --heading-3:28px;
+    --heading-4:20px;
+
+    --body-regular-1:18px;
+    --body-regular-2:16px;
+    --body-regular-3:14px;
+    --body-regular-4:12px;
+
+    --body-medium-1:18px;
+    --body-medium-2:16px;
+    --body-medium-3:14px;
+    --body-medium-4:12px;
+
+    --font-weight-bold:700;
+    --font-weight-semibold:600;
+    --font-weight-medium:500;
+    --font-weight-regular:400;
 }
 body{
-    margin: 0;
-    font-family:sans-serif;
-}
-.landing{
-    background-image: url(media/food.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: var(--white);
-}
-header a{
-    text-decoration: none;
-    color:var(--yellow);
-    min-width: 171px;
-}
-header{
-    display: flex;
-    padding: 1em;
-    row-gap: 1em;
-    flex-wrap: wrap;
-}
-#logo{
-    flex: 3;
-    font-size: 1.5em;
-    min-width: 288px;
+    font-family: "Inter", sans-serif !important;
 }
 nav{
-    align-items: center;
-    flex:2;
-    display: flex;
+    height: 84px;
+    font-family: "Inter", sans-serif;
+    font-size: var(--bodyregular);
+    background-color: var(--silver);
+    color: var(--gray);
 }
-nav a{
-    flex: 1;
-
+#login-button{
+    text-decoration: none;
+    margin-right: 1em;
 }
-nav a:hover{
-    color: var(--hov);
+#signup{
+    background-color: var(--green);
+    border:none;
 }
-.main{
+.hero{
     position: relative;
-    background-color: rgba(255,255, 255, .2);
-    /* margin: 200px auto; */
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter:  blur(7px) saturate(100%);
-    /* border-radius: 15px; */
-    margin-top: 10em;
-}
-.tagline1{
-    color:var(--white) ;
-    font-size: 2.5em;
-    font-weight: bolder;
-}
-.tagline2{
-    color: var(--white);
-    font-size: 2em;
-    font-weight: bold;
-}
-.main div{
-    margin-top: .1em;
-}
-.main button{
-    width: 15%;
-    padding: .7em;
-    border-radius: 5px;
-    border: none;
-    margin-top: 4em;
-    font-size: 14px;
-    color: var(--white);
-    background-color: var(--yellow);
-}
-.callus{
-    position: relative;
-    top: 30px;
-}
-button:hover{
-    background-color: var(--grn);
-}
-.menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(219px,1fr));
-    background:linear-gradient(to right, rgb(50, 52, 116),rgb(9, 7, 46));
-    color: var(--white);
-}
-#menu,#loc{
-    background:linear-gradient(to right, rgb(50, 52, 116),rgb(9, 7, 46));
-    font-size: 2.5em;
-    color: var(--yellow);
-    margin: 0px;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-}
-.menu th{
-    color: var(--hov);
-    font-size: 1.5em;
-}
-table{
+    background-color: var(--silver);
+    height: 599px;
+    margin: auto;
+    margin-top: 8.2em;
     width: 100%;
-    padding: 1em;
 }
-.menu tr{
-    display: flex;
-    justify-content: center;
-    margin-top: .8em;
+.label{
+    font-size: var(--heading-1);
+    font-weight: var(--font-weight-semibold);
+    font-family:  'Inter',sans-serif;
+    color: var(--gray);
 }
-.menu td:nth-child(1){
-    flex: 1;
-    justify-self: left;
+.label2{
+    font-size: var(--heading-1);
+    font-weight: var(--font-weight-semibold);
+    font-family:  'Inter',sans-serif;
+    color: #4CAF4F;
 }
-.menu td:nth-child(2){
-    justify-self: right;
+.lead{
+    font-size: var(--body-regular-2);
+    color: var(--gray);
 }
-.maincourse{
-    grid-row: span 2;
-}
-.locations{
-    background:linear-gradient(to right, rgb(50, 52, 116),rgb(9, 7, 46));
+#herobtn{
+    background-color: var(--green);
     color: var(--white);
-    display: flex;
-    flex-wrap: wrap;
+    border-radius: 4px;
 }
-
-.locations h2{
-    margin: 0px;
-    color: var(--grn);
-    margin-bottom: .8em;
+#clients{
+    font-size: var(--heading-2);
+    color: var(--gray);
 }
-.locations div{
-    flex:1;
-    padding: 1em;
-    min-width: 166px;
+#clienttxt{
+    font-size: var(--body-regular-2);
+    columns: var(--gray);
 }
-footer{
-    background-color: rgb(10, 10, 58);
-    color: var(--white);
-    padding: 1em;
+#clientlogo{
+    padding: 135px !important;
 }
-nav i{
-    margin-right: .8em;
+.community h2{
+    font-size: var(--heading-2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--gray) ;
 }
-
-#copyright{
-    margin-left:20px;
+.card-title{
+    font-size: var(--heading-3);
+    font-weight: var(--font-weight-semibold);
+    color: var(--gray) !important;
 }
-.social-menu ul{
-    display: flex;
-    padding:0;
+.card-text{
+    font-size: var(--body-regular-3);
+    color: var(--gray);
 }
-
-.social-menu ul li{
-    list-style: none;
-    display:inline-block;
-    margin: 0 15px;
+.card{
+    border: none !important;
 }
-
-.social-menu ul li .fab{
-    font-size: 25px;
-    line-height: 40px;
-    transition: .3s;
-    color: #000;
+#unlockhead{
+    font-size: var(--heading-2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--gray);
 }
-
-.social-menu ul li .fab:hover{
-    color: #fff;
+.achivements{
+    background-color: var(--silver) !important;
 }
-
-.social-menu ul li a{
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-    text-align: center;
-    transition: .6s;
-    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+#achivetext{
+    font-size: var(--heading-3);
+    color: var(--gray) !important;
 }
-
-.social-menu ul li a:hover{
-    transform: translate(0, -10%);
+#achivetext p{
+    font-size: var(--body-regular-2);
+    color: var(--gray) !important;
 }
-
-.social-menu ul li:nth-child(1) a:hover{
-    background-color: #4267B2;
+#calenderbody{
+    font-size: var(--body-regular-3);
+    color: var(--gray);
 }
-.social-menu ul li:nth-child(2) a:hover{
-    background-color: #E4405F;
+#calenderhead{
+    font-size: var(--heading-2);
+    color: var(--gray);
+    font-weight: var(--font-weight-semibold);
 }
-.social-menu ul li:nth-child(3) a:hover{
-    background-color: #00ACEE;
+#tim{
+    font-size: var(--heading-4);
+}
+.customers p{
+    font-size: var(--body-regular-2);
+    color: var(--gray) !important;
 }
