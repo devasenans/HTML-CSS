@@ -130,6 +130,9 @@ nav{
 #tim{
     font-size: var(--heading-4);
 }
+.customers{
+    background-color: var(--silver);
+}
 .customers p{
     font-size: var(--body-regular-2);
     color: var(--gray) !important;
